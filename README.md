@@ -5,7 +5,7 @@ A responsive single-page portfolio deployed on AWS using Amazon S3 and Amazon Cl
 
 ## 🌐 Live Website
 
-dxkekm1rj0c1d.cloudfront.net
+https://dxkekm1rj0c1d.cloudfront.net
 
 ## 📦 GitHub Repository
 
