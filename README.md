@@ -1,101 +1,72 @@
-[README.md](https://github.com/user-attachments/files/32953002/README.2.md)
-# Cloud Portfolio – AWS S3 + CloudFront
+# MainCrafts Technology – Cloud Computing & DevOps Internship
 
-A responsive single-page portfolio deployed on AWS using Amazon S3 and Amazon CloudFront with HTTPS.
+This repository contains my work, projects, and implementations completed as part of my **Cloud Computing & DevOps Internship at MainCrafts Technology**.
 
-## 🌐 Live Website
-
-https://dxkekm1rj0c1d.cloudfront.net
-
-## 📦 GitHub Repository
-
-https://github.com/yashasmuggu/cloud_portfolio
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- Google Fonts
-- Font Awesome
-- Git & GitHub
-- Amazon S3
-- Amazon CloudFront
-- CloudFront Origin Access Control (OAC)
-- HTTPS
-
-## 📁 Project Structure
+## 📂 Repository Structure
 
 ```text
 cloud_portfolio/
-├── index.html
-├── style.css
-└── assets/
-```
+│
+├── portfolio/
+│   ├── index.html
+│   └── style.css
+│
+├── Task-1/
+│   └── README.md
+│
+├── Task-2/
+│   ├── Dockerfile
+│   └── README.md
+│
+└── screenshots/
+    ├── Task-1/
+    └── Task-2/
 
-## ☁️ AWS Deployment
+🚀 Tasks
+Task 1 – Host a Static Portfolio on AWS
 
-### 1. Create S3 Bucket
+Technologies used:
 
-An S3 bucket named `yash-cloud-portfolio-2026` was created in the AWS Europe (Stockholm) region.
+HTML5
+CSS3
+AWS S3
+AWS CloudFront
+HTTPS
+GitHub
 
-### 2. Upload Website Files
+The portfolio website was hosted using Amazon S3 and served through Amazon CloudFront.
 
-The portfolio files were uploaded to the S3 bucket:
+Task 2 – Containerization & Cloud Deployment
 
-- `index.html`
-- `style.css`
-- `assets/`
+Technologies used:
 
-### 3. Configure Static Website Hosting
+Docker
+Nginx
+Ubuntu
+AWS EC2
+Git & GitHub
 
-S3 static website hosting was enabled with:
+The portfolio website was containerized using Docker and deployed on an AWS EC2 virtual machine.
 
-- Index document: `index.html`
+🌐 Portfolio
 
-### 4. Configure CloudFront
+The portfolio source code is available in:
 
-A CloudFront distribution was created using the S3 bucket as the origin.
+portfolio/
 
-Configuration includes:
+🛠️ Technologies
+HTML
+CSS
+Docker
+Nginx
+AWS S3
+AWS CloudFront
+AWS EC2
+Linux
+Git & GitHub
+👨‍💻 Author
 
-- Default root object: `index.html`
-- Origin Access Control (OAC)
-- Cache policy: `CachingOptimized`
-- Allowed methods: `GET, HEAD`
-- Viewer protocol policy: `Redirect HTTP to HTTPS`
+Yashas Muggu
 
-### 5. HTTPS
-
-CloudFront provides the final HTTPS endpoint:
-
-https://dxkekm1rj0c1.cloudfront.net
-
-HTTP requests are redirected to HTTPS.
-
-## 🔐 Security
-
-CloudFront Origin Access Control (OAC) is used so that CloudFront can access the S3 objects through the configured distribution.
-
-The S3 bucket policy permits `s3:GetObject` to the CloudFront service principal for the specific CloudFront distribution.
-
-## 🔄 Deployment Workflow
-
-```text
-Local Portfolio
-      ↓
-   GitHub
-      ↓
-   Amazon S3
-      ↓
-CloudFront + OAC
-      ↓
- HTTPS Website
-```
-
-## 🎯 Task Objective
-
-This project was completed as part of the **Cloud Computing & DevOps – Task 1** assignment. The objective was to build and deploy a static portfolio using Amazon S3 and serve it through CloudFront with HTTPS.
-
-## 👤 Author
-
-**Yashas Muggu**
+BE – Information Technology
+Chaitanya Bharathi Institute of Technology
